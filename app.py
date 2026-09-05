@@ -93,7 +93,7 @@ if submitted:
             
             with st.spinner("🤖 Generating your content with Groq..."):
                 response = client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model="openai/gpt-oss-120b",
                     messages=[
                         {"role": "system", "content": "You are a professional social media content creator."},
                         {"role": "user", "content": prompt}
